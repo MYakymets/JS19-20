@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 1160px;
+    height: 1015px;
+    margin: 0 auto;
+}
+li {
+    display: inline-block;
+    list-style: none;
+}
+.logo-line {
+    display: block;
+    position: relative;
+    height: 110px;
+    padding: 30px 0 0 0;
+    box-sizing: border-box;
+    img {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+        }
+    div {
+        display: inline-block;
+        position: relative;
+        left: 0;
+
+        h1 {
+            display: block;
+            font-family: ubuntumedium;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: -5px;
+        }
+        span {
+            display: block;
+            font-family: ubuntulight;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+        }
+    }
+    ul {
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        li {
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+
+            a {
+                display: block;
+                background: url('../img/sprite-social.png') no-repeat;
+                width: 16px;
+                height: 16px;
+                background-position: 0px -1px;
+            }
+        }
+        li:nth-child(2) a {
+            background-position: -16px -2px;
+        }
+        li:nth-child(3) a {
+            background-position: -32px -1px;
+        }
+        li:nth-child(4) a {
+            background-position: -48px -1px;
+        }
+        li:last-child a {
+            background-position: -64px -1px;
+        }
+        li a:hover {
+            background-position: 0px -17px;
+        }
+        li:nth-child(2) a:hover {
+            background-position: -16px -18px;
+        }
+        li:nth-child(3) a:hover {
+            background-position: -32px -17px;
+        }
+        li:nth-child(4) a:hover {
+            background-position: -48px -17px;
+        }
+        li:last-child a:hover {
+            background-position: -64px -17px;
+        }
+    }
+}
+
+.menu-line {
+    position: relative;
+    background-color: #2a2d32;
+    height: 56px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.menu {
+    display: inline-block;
+    height: 56px;
+    .active {
+        background-color: #248cec;
+    }
+    li {
+        border-right: 1px solid #181a1d;
+        line-height: 56px;
+    }
+    a {
+        display: block;
+        padding: 0 36px;
+        height: 56px;
+        text-align: center;
+        text-decoration: none;
+        font-family: ubuntu_condensedregular;
+        color: #fff;
+        box-sizing: border-box;
+    }
+    a:hover {
+        color: #f4b60d;
+    }
+}
+.search-block {
+    display: inline-block;
+    border: 1px solid rgb(24, 26, 29);
+    background: #35383c;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 239px;
+    height: 42px;
+    z-index: 16;
+
+    input {
+        width: 200px;
+        height: 42px;
+        background: #35383c;
+        color: white;
+        border: 0 solid transparent;
+        padding-left: 5px;
+    }
+    input:focus {
+        outline: none;
+    }
+    button {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        line-height: 42px;
+        border: 0;
+        outline: 0;
+        background: 0 0;
+    }
+}
+
+/* my  style  */
+.carousel-line {
+    display: block;
+    width: 1160px;
+    height: 470px;
+    margin: 0 auto;
+    background: url('../img/bg-carousel.png') no-repeat;
+    background-position: center;
+}
+
+.carousel_item  p {
+        display: inline-block;
+        min-width: 200px;
+        padding: 5px 20px;
+        background-color: rgba(40, 40, 40, 0.7);
+}
+.carousel_item p span {
+            font-family: ubuntumedium;
+            font-size: 54px;
+            text-transform: uppercase;
+            color: #fff;
+}
+
+.carousel_item p:first-child span{
+        color: #f4b60d;
+}
+
+/* layout */
+#container {
+    position: relative;
+    width: 100%;
+
+}
+
+
+#rs-carousel ul li {
+    list-style: none;
+    margin-right: 960px;
+            color: #fff;
+            font-size: 54px;
+            text-align: left;
+            width: 200px;
+            height: 470px;
+            position: relative;
+            top: 160px;
+            padding-left: 50px;
+}
+
+.rs-carousel-pagination {
+    display: block;
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    top: -60px;
+}
+
+#rs-carousel .rs-carousel-pagination-link {
+        display: inline;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            margin-right: 5px;
+}
+
+#rs-carousel .rs-carousel-pagination-link a {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    color: transparent;
+    font-size: 0px;
+    text-decoration: none;
+}
+
+#rs-carousel .rs-carousel-pagination-link:hover a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: rgb(0, 29, 29);
+    left: 3px;
+    top: 3px;
+}
+
+#rs-carousel .rs-carousel-pagination-link-active a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: rgb(0, 29, 29);
+    left: 3px;
+    top: 3px;
+}
+.rs-carousel-mask {
+    overflow: hidden;
+}
+
+.rs-carousel-runner {
+    position: relative;
+}
+
+.rs-carousel-horizontal .rs-carousel-item {
+    float: left;
+}
+
+.rs-carousel-mask {
+    position: relative;
+}
+
+.rs-carousel-runner {
+        -moz-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+
+.rs-carousel-transition .rs-carousel-runner {
+    -moz-transition: -moz-transform .400s ease;
+    -webkit-transition: -webkit-transform .400s ease;
+    -o-transition: -o-transform .400s ease;
+    -ms-transition: -ms-transform .400s ease;
+    transition: transform .400s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prospect {
+    position: relative;
+    height: 340px;
+    padding-top: 70px;
+    box-sizing: border-box;
+
+    ul li {
+        display: inline-block;
+        width: 360px;
+        margin-right: 35px;
+
+        div {
+            display: inline-block;
+            width: 239px;
+            padding-top: 35px;
+        }
+
+        .prospect_number {
+            display: inline-block;
+            font-family: ubuntumedium;
+            font-size: 90px;
+            color: rgba(42, 43, 46, 0.1);
+            vertical-align: top;
+        }
+        h4 {
+            font-family: ubuntumedium;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        h4:before {
+            display: block;
+            position: relative;
+            content: "";
+            width: 33px;
+            height: 33px;
+            bottom: 10px;
+            background: url('../img/sprite-spare.png') no-repeat;
+            background-position: 0px -1px;
+        }
+        p {
+            font-family: 'Arial Regular';
+            font-size: 13px;
+            color: #8a8a8a;
+            margin-bottom: 20px;
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #2a2b2e;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        a:hover {
+            color: #248cec;
+        }
+        a:after {
+            display: block;
+            position: absolute;
+            content: '';
+            right: -20px;
+            top: 3px;
+            width: 10px;
+            height: 9px;
+            background: url('../img/sprite-arrow.png') no-repeat;
+            background-position: 0px 0px;
+        }
+        a:hover:after {
+            background-position: -10px 0px;
+        }
+    }
+    ul li:nth-child(2) h4:before {
+        background-position: -33px -1px;
+    }
+    ul li:nth-child(3) h4:before {
+        background-position: -66px -1px;
+    }
+     ul li:nth-child(3) {
+        margin-right: 0;
+    }
+}
